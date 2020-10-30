@@ -22,12 +22,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo "<br>";
            
         }
+    
     } else {
         header('location:me.php');
     $_SESSION['username']=$username;
     $_SESSION['numberofpeople']=$numberPeople;
     $_SESSION['preference'] = $preference;
     $_SESSION['rating'] = $rating;
+    exit;
     }
 }
 ?>
@@ -43,6 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h1>welcome to Shaza website</h1>
     <?php if($_GET['info']=='logout'):?>
     <p>votre sesion est fermer</p>
+    
     <?php endif ?>
     <p>shaza website is a place where you can found a room for your vacation</p><br>
     <div>

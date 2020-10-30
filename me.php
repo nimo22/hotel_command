@@ -32,6 +32,6 @@ foreach ($room as $data => $choice) {
 <body>
     <pre>meci <?= $username ?> votre hotel est <?= $hotelname ?> et votre chambre choisi est <?= $roomname ?></pre>
     <br>
-    <p>pour reffaire un demande voyer clicker <a href="etap1.php">ici</a></p>
+    <p>pour reffaire un demande et fermer votre session securetement voyer clicker <a href="etap1.php">ici</a></p>
     
 </body>
