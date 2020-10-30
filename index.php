@@ -20,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         foreach ($error as $data) {
             echo $data;
             echo "<br>";
+           
         }
     } else {
         header('location:me.php');
@@ -40,6 +41,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
     <h1>welcome to Shaza website</h1>
+    <?php if($_GET['info']=='logout'):?>
+    <p>votre sesion est fermer</p>
+    <?php endif ?>
     <p>shaza website is a place where you can found a room for your vacation</p><br>
     <div>
         <form method="POST" action="<?= $_SERVER["PHP_SELF"]; ?>">
